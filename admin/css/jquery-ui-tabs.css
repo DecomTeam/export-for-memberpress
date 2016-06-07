@@ -1,0 +1,30 @@
+/*
+ * jQuery UI CSS Framework 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ */
+
+#defm_admin_tabs.ui-tabs { position: relative; padding: 0; zoom: 1; border: none; border-radius: 0; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+#defm_admin_tabs.ui-tabs .ui-tabs-nav { margin: 0; padding: 0; background: none; border: none; border-bottom: 2px solid #cccccc; border-radius: 0; }
+#defm_admin_tabs.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; border: 0 !important; padding: 0; white-space: nowrap; border-radius: 0; }
+#defm_admin_tabs.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; color: white; font-weight: normal; background: #008ec2; border-color: #006799; border-bottom: 2px solid #008ec2;}
+#defm_admin_tabs.ui-tabs .ui-tabs-nav li a .dashicons { vertical-align: text-bottom;}
+#defm_admin_tabs.ui-tabs .ui-tabs-nav li a:focus { outline: none; }
+#defm_admin_tabs.ui-tabs .ui-tabs-nav li.ui-state-active { margin-bottom: 0; padding-bottom: 1px; border: 2px solid #cccccc !important; border-bottom: none !important;  z-index: 3; background: none; }
+#defm_admin_tabs.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-state-active a { cursor: pointer; }
+#defm_admin_tabs.ui-tabs .ui-tabs-nav li a:hover, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-state-active a:hover, #defm_admin_tabs.ui-tabs .ui-tabs-nav li a:active, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-state-active a:active { background: white; border-bottom: 2px solid white; color: black; }
+#defm_admin_tabs.ui-tabs .ui-tabs-nav li.ui-state-active a, #defm_admin_tabs.ui-tabs .ui-tabs-nav li.ui-state-disabled a, #defm_admin_tabs.ui-tabs .ui-tabs-nav li.ui-state-processing a, #defm_admin_tabs.ui-tabs .ui-tabs-nav li.ui-state-active a:hover, #defm_admin_tabs.ui-tabs .ui-tabs-nav li.ui-state-disabled a:hover, #defm_admin_tabs.ui-tabs .ui-tabs-nav li.ui-state-processing a:hover, #defm_admin_tabs.ui-tabs .ui-tabs-nav li.ui-state-active a:active, #defm_admin_tabs.ui-tabs .ui-tabs-nav li.ui-state-disabled a:active, #defm_admin_tabs.ui-tabs .ui-tabs-nav li.ui-state-processing a:active { cursor: text; color: black; border: none; background: none; font-weight: bold; margin-bottom: -2px; border-bottom: 2px solid #f1f1f1; }
+#defm_admin_tabs.ui-tabs .ui-tabs-panel { display: block; position: relative; border-width: 0; padding: 1em 1.4em; background: #f1f1f1; border-radius: 0; }
+#defm_admin_tabs.ui-tabs .ui-tabs-hide { display: none !important; }
+
+
+@media screen and (max-width: 782px) {
+
+    #defm_admin_tabs.ui-tabs .ui-tabs-nav li a .defm-tab-label { display: none; }
+
+}
+

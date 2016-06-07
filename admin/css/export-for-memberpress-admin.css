@@ -1,0 +1,717 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+
+.defm-tab-panel-content-section {
+    padding: 1em 0;
+}
+
+.defm-admin-tabs {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.defm-admin-tabs.ui-tabs {
+    opacity: 1;
+}
+
+.defm-tab-header,
+.defm-tab-footer {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.defm-tab-header .defm-tab-panel-title {
+    margin-right: 1em;
+    font-size: 2em;
+    float: left;
+}
+
+.defm-tab-header {
+    position: relative;
+}
+
+.defm-tab-panel-content-section::after,
+.defm-form-wrapper::after,
+.defm-date-range::after,
+.defm-tab-header::after,
+.defm-tab-footer::after,
+.job-details::after,
+.profile-details::after,
+.defm-profile-preview::after,
+.defm-email-from::after,
+.defm-email-to::after,
+.defm-email-subject::after,
+.defm-email-cc::after,
+.defm-email-bcc::after,
+.defm-email-text::after
+{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+/* Manual export tab css */
+
+
+.defm-date-range {
+    clear: both;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.defm-select-membership,
+.defm-select-week,
+.defm-file-name,
+.defm-submit,
+.defm-date-start,
+.defm-date-end,
+.defm-ftp-server,
+.defm-ftp-username,
+.defm-ftp-password,
+.defm-select-schedule,
+.defm-select-weekday,
+.defm-select-ftp-profile,
+.defm-select-email-profile,
+.defm-select-group,
+.defm-select-engagement {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.defm-select-ftp-profile {
+    clear: both;
+}
+
+.defm-membership-select,
+.defm-ftp-profile-select,
+.defm-email-profile-select
+ {
+    width: 150px;
+}
+
+.defm-period-select {
+    width: 100px;
+}
+
+.defm-weekday-select {
+    width: 90px;
+}
+
+.wp-core-ui .button-download, .wp-core-ui .button-download, .wp-core-ui .button-download:focus, .wp-core-ui .button-download:hover {
+    background: #298A08;
+    border-color: #0B610B;
+    -webkit-box-shadow: inset 0 1px 0 rgba(49,180,49,.6);
+    box-shadow: inset 0 1px 0 rgba(49,180,49,.6);
+    color: #fff;
+}
+
+ .defm-download-report {
+    display: none;
+    opacity: 0;
+}
+
+.defm-status-line {
+    padding: 1em;
+    background: #efefef;
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+    box-shadow: 1px 1px 2px rgba(255,255,255,0.25);
+}
+
+.defm-status-line.error {
+    padding: 1em;
+    color: #000000;
+    border: 1px solid red;
+    font-weight: bold;
+}
+
+.defm-status-line:first-child {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+}
+
+.defm-progress {
+    margin-bottom: 0.5em;
+}
+
+.defm-progress.error {
+    padding: 0;
+}
+
+.defm-progress .ui-progressbar-value {
+    background: #00a0d2;
+    border-color: #00a0d2;
+    transition: all 20s;
+    transition-timing-function: ease-out;
+}
+
+.defm-progress.complete .ui-progressbar-value {
+    transition: all 1s;
+}
+
+.defm-progress.error .ui-progressbar-value {
+    transition: all 1s;
+    background: red;
+    border-color: red;
+}
+
+.defm-working {
+    position: relative;
+    padding-left: 2em;
+}
+
+.defm-working:not(:first-child) {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid #efefef;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.defm-working:before {
+    content: "\f111";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    text-align: center;
+    vertical-align: bottom;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    font-family: dashicons;
+    color: #cccccc;
+     -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+}
+
+.defm-working:not(:first-child):before {
+    top: 1em;
+}
+
+@-moz-keyframes spin-reverse {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(-360deg); }
+}
+@-webkit-keyframes spin-reverse {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(-360deg); }
+}
+@keyframes spin-reverse {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(-360deg);}
+}
+
+.defm-working:after {
+    content: "\f111";
+    position: absolute;
+    top: -2px;
+    left: 16px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: bottom;
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+    font-size: 13px;
+    font-family: dashicons;
+    color: #999999;
+     -webkit-animation-name: spin-reverse;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin-reverse;
+    -moz-animation-duration: 2000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin-reverse;
+    -ms-animation-duration: 2000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+}
+
+.defm-working:not(:first-child):after {
+    top: 17px;
+}
+
+.finished.defm-working:before,
+.error.defm-working:before {
+    content: "\f147";
+    color: #298A08;
+    -webkit-animation-name: none;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: none;
+    -moz-animation-duration: 2000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: none;
+    -ms-animation-duration: 2000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+}
+
+.error.defm-working:before  {
+    content: "\f534";
+    color: red;
+}
+
+.finished.defm-working:after,
+.error.defm-working:after {
+    content: '';
+    display: none;
+}
+
+.defm-download-button {
+    margin-bottom: 0.5em;
+}
+
+.defm-button.dashicons-before {
+    padding-left: 3px;
+}
+
+.defm-button::before {
+    vertical-align: text-bottom;
+}
+
+
+/* Scheduled export css */
+
+
+.defm-tab-header .defm-add-scheduled-report {
+    display: inline-block;
+    float: left;
+    margin-top: 1em;
+}
+
+.defm-scheduled-report-form-wrapper,
+.defm-ftp-profile-form-wrapper,
+.defm-email-profile-form-wrapper {
+    display: none;
+    margin-bottom: 2em;
+    opacity: 0;
+}
+
+.defm-report-name,
+.defm-profile-name {
+    margin-bottom: 1em;
+}
+
+.defm-report-name label,
+.defm-profile-name label {
+    display: none;
+}
+
+.defm-report-name input,
+.defm-profile-name input {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+}
+
+.defm-scheduled-submit,
+.defm-ftp-submit,
+.defm-email-submit {
+    position: relative;
+    overflow: visible;
+}
+
+.defm-scheduled-submit:before,
+.defm-scheduled-submit:after,
+.defm-ftp-submit::before,
+.defm-ftp-submit::after,
+.defm-email-submit::before,
+.defm-email-submit::after {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.defm-scheduled-submit .defm-submit,
+.defm-ftp-submit .defm-submit {
+    margin-right: 1em;
+}
+
+.defm-email-submit {
+    margin-right: 3em;
+}
+
+.defm-scheduled-report-form-wrapper .defm-working,
+.defm-ftp-profile-form-wrapper .defm-working,
+.defm-email-profile-form-wrapper .defm-working {
+    margin-top: 0;
+    padding-top: 0;
+    border-top; 0;
+    padding-left: 0;
+}
+
+.defm-scheduled-report-form-wrapper .defm-working:before,
+.defm-ftp-profile-form-wrapper .defm-working:before,
+.defm-email-profile-form-wrapper .defm-working:before {
+    opacity: 1;
+    left: auto !important;
+    top: 7px;
+    right: -2em !important;
+}
+
+.defm-scheduled-report-form-wrapper .defm-working:after,
+.defm-ftp-profile-form-wrapper .defm-working:after,
+.defm-email-profile-form-wrapper .defm-working:after {
+    opacity: 1;
+    left: auto !important;
+    top: 1px;
+    right: -2em !important;
+}
+
+.defm-job,
+.defm-profile,
+.defm-report {
+    position: relative;
+    background: white;
+    padding: 1em;
+    border-top: 1px solid #efefef;
+    margin: 0;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: opacity 0.3s, background 0.5s;
+}
+
+.defm-job:last-child,
+.defm-profile:last-child,
+.defm-report:last-child {
+    border-bottom: 1px solid 1px solid #efefef;
+}
+
+.defm-job:nth-child(odd),
+.defm-profile:nth-child(odd),
+.defm-report:nth-child(odd) {
+    background: #f8f8f8;
+}
+
+.defm-job:hover, .defm-job.new,
+.defm-profile:hover, .defm-profile.new,
+.defm-report:hover, .defm-report.new {
+    background: #ffffe5;
+}
+
+.defm-job.deleted,
+.defm-profile.deleted,
+.defm-report.deleted {
+    background: #ffe5e5;
+    opacity: 0.5;
+}
+
+.defm-job-title,
+.defm-profile-title,
+.defm-report-title {
+    margin-right: 200px;
+}
+
+.defm-job .defm-job-buttons,
+.defm-profile .defm-profile-buttons,
+.defm-report .defm-report-buttons {
+    position: absolute;
+    top: 1.5em;
+    right: 1em;
+}
+
+.defm-job .job-details li,
+.defm-profile .profile-details li,
+.defm-report .report-details li {
+    display: inline-block;
+    margin-right: 2em;
+    margin-bottom: 1em;
+}
+
+.defm-job .job-details .dashicons,
+.defm-profile .profile-details .dashicons,
+.defm-profile .defm-email-text-title .dashicons,
+.defm-report .report-details .dashicons,
+.defm-job-description .dashicons {
+    color: #008ec2;
+    vertical-align: text-bottom;
+}
+
+.disabled .defm-job-description .dashicons {
+    color: #990000;
+}
+
+.defm-job .defm-working,
+.defm-profile .defm-working,
+.defm-report .defm-working {
+    margin-top: 0;
+    padding-top: 0;
+    border-top; 0;
+    padding-left: 0;
+}
+
+.defm-job .defm-working:before,
+.defm-profile .defm-working:before,
+.defm-report .defm-working:before {
+    opacity: 1;
+    left: -2em;
+    top: 7px;
+}
+
+.defm-job .defm-working:after,
+.defm-profile .defm-working:after,
+.defm-report .defm-working:after {
+    opacity: 1;
+    left: -2em;
+    top: 1px;
+}
+
+
+.defm-job.disabled {
+    background: #dedede;
+    opacity: 0.75;
+}
+
+.defm-job .defm-job-preview,
+.defm-job .defm-form-wrapper,
+.defm-profile .defm-profile-preview,
+.defm-profile .defm-form-wrapper {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    opacity: 1;
+    height: auto;
+}
+
+.defm-job .defm-form-wrapper,
+.defm-profile .defm-form-wrapper {
+    height: 0;
+    top: 100%;
+    bottom: -100%;
+}
+
+.defm-job.edit .defm-job-preview,
+.defm-profile.edit .defm-profile-preview {
+    top: -100%;
+    bottom: 100%;
+    height: 0;
+    position: absolute;
+}
+
+.defm-job.edit .defm-form-wrapper,
+.defm-profile.edit .defm-form-wrapper {
+    display: block;
+    top: 1em;
+    bottom: 0;
+    height: auto;
+}
+
+
+/* Email profiles screen */
+
+.defm-email-from label,
+.defm-email-to label,
+.defm-email-subject label,
+.defm-email-cc label,
+.defm-email-bcc label,
+.defm-email-text label {
+    box-sizing: border-box;
+    float: left;
+    width: 10%;
+    text-align: right;
+    padding-top: 0.4em;
+    margin-right: 2%;
+}
+
+.defm-email-from input,
+.defm-email-to input,
+.defm-email-subject input,
+.defm-email-cc input,
+.defm-email-bcc input,
+.defm-email-text textarea {
+    float: left;
+    box-sizing: border-box;
+    width: 87%;
+    margin-bottom: 1em;
+}
+
+.defm-email-text textarea {
+    height: 200px;
+}
+
+.defm-email-attachment label {
+    float: left;
+    width: 87%;
+    margin-left: 12%;
+    text-align: left;
+}
+
+.defm-email-attachment input {
+    margin-right: 1%;
+}
+
+
+.defm-email-submit {
+    float: none;
+    clear: both;
+    text-align: right;
+}
+
+.defm-email-submit .defm-submit {
+    float: none;
+}
+
+.defm-email-text-title {
+    float: left;
+    margin-right: 2%;
+}
+
+.defm-email-profile-description {
+    float: left;
+    padding-top: 0.15em;
+    width: 60%;
+}
+
+
+/* History screen */
+
+.defm-filter-history {
+    position: absolute;
+    top: 13px;
+    right: 0;
+    text-align: right;
+}
+
+.defm-filter-history select {
+    width: 125px;
+}
+
+.defm-filter-history select,
+.defm-filter-history label,
+.defm-filter-history button {
+    display: inline-block;
+    margin-bottom: 1em !important;
+}
+
+.defm-generated-by-filter {
+    display: none;
+}
+
+
+/* Medium screen */
+
+@media screen and (max-width: 1024px) {
+
+    .defm-select-membership,
+    .defm-select-week,
+    .defm-file-name,
+    .defm-submit,
+    .defm-date-start,
+    .defm-date-end,
+    .defm-ftp-server,
+    .defm-ftp-username,
+    .defm-ftp-password,
+    .defm-select-schedule,
+    .defm-select-weekday,
+    .defm-select-ftp-profile {
+        float: left;
+        width: 29%;
+        margin-right: 4%;
+        margin-bottom: 1em;
+    }
+
+    .defm-job .job-details li,
+    .defm-profile .profile-details li {
+        float: left;
+        width: 45%;
+        margin-right: 5%;
+        margin-bottom: 1em;
+    }
+
+    .defm-job .job-details li:nth-child(2n+1),
+    .defm-profile .profile-details li:nth-child(2n+1) {
+        clear: both;
+    }
+}
+
+
+/* Small screen */
+
+@media screen and (max-width: 782px) {
+
+    .defm-tab-header .defm-tab-panel-title {
+        margin-right: 0;
+        margin-bottom: 1em;
+        font-size: 24px;
+        float: none;
+        text-align: center;
+    }
+
+    .defm-select-membership,
+    .defm-select-week,
+    .defm-file-name,
+    .defm-submit,
+    .defm-date-start,
+    .defm-date-end,
+    .defm-ftp-server,
+    .defm-ftp-username,
+    .defm-ftp-password,
+    .defm-select-schedule,
+    .defm-select-weekday,
+    .defm-select-ftp-profile {
+        float: none;
+        margin-bottom: 1em;
+    }
+
+
+    .defm-button.dashicons-before {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .defm-button-label {
+        display: none;
+    }
+
+    .defm-job .job-details li,
+    .defm-profile .profile-details li {
+        display: block;
+        float: none;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .defm-job-title,
+    .defm-profile-title {
+        margin-right: 120px;
+    }
+
+    .defm-filter-history {
+        position: static;
+        text-align: center;
+    }
+
+
+}
+
