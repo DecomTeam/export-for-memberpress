@@ -33,6 +33,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 define('DEFM_PLUGIN_FILE', plugin_basename(__FILE__));
+define('DEFM_PLUGIN_DIR', plugin_dir_path(__FILE__));
 
 /**
  * The code that runs during plugin activation.

@@ -361,11 +361,23 @@ class Export_For_MemberPress_Admin {
 			__('Export for MemberPress', 'export-for-memberpress'),
 			__('Export for MemberPress', 'export-for-memberpress'),
 			'manage_options',
-			'export-for-memberpress/admin/partials/admin-main.php'
-			);
+			'export-for-memberpress',
+			array($this, 'display_admin_page')
+		);
 
 	}
 
+	/**
+	 *
+	 * Display admin menu page
+	 *
+	 * @since 1.3.0
+	 *
+	 */
+	public function display_admin_page()
+	{
+		require DEFM_PLUGIN_DIR . 'admin/partials/admin-main.php';
+	}
 	/**
 	 *
 	 * Get tab definitions
