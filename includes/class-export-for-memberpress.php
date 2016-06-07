@@ -6,7 +6,7 @@
  * A class definition that includes attributes and functions used across both the
  * public-facing side of the site and the admin area.
  *
- * @link       http://example.com
+ *
  * @since      1.0.0
  *
  * @package    Export_For_MemberPress
@@ -25,7 +25,7 @@
  * @since      1.0.0
  * @package    Export_For_MemberPress
  * @subpackage Export_For_MemberPress/includes
- * @author     Your Name <email@example.com>
+ *
  */
 class Export_For_MemberPress {
 

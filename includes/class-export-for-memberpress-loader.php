@@ -3,7 +3,7 @@
 /**
  * Register all actions and filters for the plugin
  *
- * @link       http://example.com
+ *
  * @since      1.0.0
  *
  * @package    Export_For_MemberPress
@@ -19,7 +19,7 @@
  *
  * @package    Export_For_MemberPress
  * @subpackage Export_For_MemberPress/includes
- * @author     Your Name <email@example.com>
+ *
  */
 class Export_For_MemberPress_Loader {
 

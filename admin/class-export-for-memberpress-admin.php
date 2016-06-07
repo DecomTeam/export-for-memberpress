@@ -17,7 +17,7 @@
  *
  * @package    Export_For_MemberPress
  * @subpackage Export_For_MemberPress/admin
- * @author     Your Name <email@example.com>
+ *
  */
 class Export_For_MemberPress_Admin {
 

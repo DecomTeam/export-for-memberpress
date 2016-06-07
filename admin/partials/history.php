@@ -3,7 +3,7 @@
 /**
  * Schedule export template
  *
- * @link       http://example.com
+ *
  * @since      1.2.0
  *
  * @package    Export_For_MemberPress
