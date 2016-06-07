@@ -325,7 +325,7 @@ class Export_For_MemberPress_Admin {
 	 */
 	public function enqueue_scripts($hook) {
 
-		if ( $hook != 'export-for-memberpress/admin/partials/admin-main.php' )
+		if ( $hook != 'tools_page_export-for-memberpress' )
 			return;
 
 		// Styles
