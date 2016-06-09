@@ -3,7 +3,7 @@ Contributors: pixelhappystudio, decomteam
 Tags: export, csv, membership, memberpress
 Requires at least: 3.5
 Tested up to: 4.5
-Stable tag: 1.3
+Stable tag: 1.3.1
 
 == Description ==
 
@@ -12,6 +12,7 @@ Export MemberPress user login activity as csv reports.
 This plugin currently requires MemberPress.
 
 Once the plugin is activated, you can:
+
 * Export weekly or custom member login activity.
 * Schedule automatic generation of daily, weekly, monthly or yearly reports and have them uploaded to FTP and/or sent as email attachments
 
@@ -24,11 +25,15 @@ Once the plugin is activated, you can:
 == Screenshots ==
 
 1. Export screeen
-2. History of exported reports
-3. Scheduled reports
+2. Scheduled reports
+3. History of exported reports
+4. FTP settings
+5. Email settings
 
 == Changelog ==
 
+= 1.3.1 =
+* Readme improvements
 = 1.3 =
 * File name format, dates only if filename option empty
 = 1.2 =

@@ -5,7 +5,7 @@
  * Plugin Name: Export for MemberPress
  * Plugin URI:  http://decom.ba/plugins/export-for-memberpress
  * Description: Export custom reports of MemberPress user activity as CSV
- * Version:     1.3
+ * Version:     1.3.1
  * Author:      Decom
  * Author URI:  http://decom.ba
  * License:     GPL2
