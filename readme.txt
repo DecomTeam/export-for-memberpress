@@ -2,7 +2,7 @@
 Contributors: pixelhappystudio, decomteam
 Tags: export, csv, membership, memberpress
 Requires at least: 3.5
-Tested up to: 4.5
+Tested up to: 4.7
 Stable tag: 1.3.1
 
 == Description ==
